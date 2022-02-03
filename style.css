@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+}
+
+.draggable-list {
+  border: lightgrey 1px solid;
+  list-style: none;
+  padding: 0;
+}
+
+.draggable-list li {
+  display: flex;
+  flex: 1;
+  background-color: floralwhite;
+}
+
+.draggable-list li:not(:last-child) {
+  display: flex;
+  flex: 1;
+  border-bottom: silver 1px solid;
+}
+
+.draggable-list .number {
+  font-size: 20px;
+  color: silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  background-color: cornsilk;
+}
+
+.draggable-list .person-name {
+  margin: 0 20px 0 0;
+}
+
+.draggable-list li.right .person-name {
+  color: #8fcb2e;
+}
+.draggable-list li.wrong .person-name {
+   color: #be4848;
+ }
+
+.draggable-list li.over .draggable {
+  background-color: cornsilk;
+}
+
+.draggable {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  flex: 1
+}
+
+.check-btn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 7%;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  color: #ffffff;
+  outline: none;
+}
+
+.check-btn:active {
+  color: #ffffff;
+  transform: scale(0.95);
+}
